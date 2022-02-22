@@ -20,5 +20,5 @@ pada task ini, membuat Repository GIT dan mengimplementasikan penggunaan Branchi
 
 Berikut kode hasil dari praktikum.
 
-praktikum.html
+[praktikum.html]
 
