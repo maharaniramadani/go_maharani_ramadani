@@ -20,5 +20,5 @@ pada task ini, membuat Repository GIT dan mengimplementasikan penggunaan Branchi
 
 Berikut kode hasil dari praktikum.
 
-[praktikum.html]
+[praktikum.html](https://github.com/maharaniramadani/go_maharani_ramadani/blob/85798bdb4577035593b441ab1ba62ad7e8f2750b/2_Version%20Control%20and%20Branch%20Management%20(Git)/praktikum.html)
 
