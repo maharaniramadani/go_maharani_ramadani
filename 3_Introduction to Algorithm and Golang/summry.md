@@ -11,9 +11,10 @@ Dalam materi ini, mempelajari:
 ### Pengertian
 Algoritma adalah suatu prosedur komputasi yang didefinisikan dengan baik yang mengambil beberapa nilai sebagai input dan menghasilkan beberapa nilai sebagai output. Algoritma memiliki tiga karakteristik yaitu sebagai batas awal dan akhir, intruksi yang terdefinisi dengan baik, efektif dan efisien. 
 konsep dasar algoritma ada 3, yaitu:
-  -Squential(Urutan)
-  -Branching (Percabangan)
-  -Looping (Perulangan)
+
+  - Squential(Urutan)
+  - Branching (Percabangan)
+  - Looping (Perulangan)
   
 
 ### Penggunaan 
