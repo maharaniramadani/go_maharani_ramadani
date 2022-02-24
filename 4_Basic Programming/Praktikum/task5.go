@@ -19,4 +19,8 @@ func main() {
   fmt.Println(palindrome("kasur rusak"))
   fmt.Println(palindrome("mistar"))
   fmt.Println(palindrome("lion"))
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9a4e23a6d2bf8a32b86023b6fbb9d6ae57cd3a8d
