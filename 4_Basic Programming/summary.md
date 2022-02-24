@@ -88,4 +88,4 @@ Berikut kode hasil dari praktikum.
 
 [Task8.go](https://github.com/maharaniramadani/go_maharani_ramadani/blob/bc82aa1f10d748e259f1988a1a26744d3c3472fb/4_Basic%20Programming/Praktikum/task8.go)
 
-![alt text] (https://github.com/maharaniramadani/go_maharani_ramadani/blob/bc82aa1f10d748e259f1988a1a26744d3c3472fb/4_Basic%20Programming/Screenshot/task8.png)
+![alt text](https://github.com/maharaniramadani/go_maharani_ramadani/blob/bc82aa1f10d748e259f1988a1a26744d3c3472fb/4_Basic%20Programming/Screenshot/task8.png)
