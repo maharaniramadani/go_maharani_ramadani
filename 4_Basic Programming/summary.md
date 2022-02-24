@@ -8,11 +8,22 @@ Dalam materi ini, mempelajari:
 3. Branching dan looping
 
 ### Proses
-variabel digunakan untuk menyimpan informasi dalam program komputer, mereka menyediakan cara pelabelan data dengan nama deskriptif dan mereka memiliki tipe data (bolean, numerik, string). 
+Variabel digunakan untuk menyimpan informasi dalam program komputer, variabel menyediakan cara pelabelan data dengan nama deskriptif dan juga memiliki tipe data seperti,
+  - Bolean 
+  - Numerik 
+  - String 
 
-operator di golang ada berupa aritmatik, komparison, logika, bittwise, assigment dan meiscellaneous.
+Operator di golang ada berupa,
+  - Aritmatik
+  - Komparison
+  - Logika
+  - Bittwise
+  - Assigment 
+  - Meiscellaneous.
 
-hanya ada beberapa struktur kontrol di go.to percabangan kami menggunakan if dan switch, untuk menulis loop kami menggunakan kata kunci for
+Juga ada beberapa struktur kontrol di golang.
+  - Percabangan menggunakan if dan switch
+  - Menulis perulangan menggunakan kata kunci for
 
 ### Penggunaan 
 Agar kita dapat terbiasa membuat program dengan menggunakan operator operasi dan juga terbiasa menggunakan kontrol struktur.
