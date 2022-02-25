@@ -5,21 +5,14 @@ package main
 import "fmt"
 
 func main() {
-	var rows int = 5
-	var k int
-
-	for i := 1; i <= rows; i++ {
-		k = 0
-		for space := 1; space <= rows-i; space++ {
-			fmt.Print("  ")
+	n:=5
+	for i :=0; i < n ;i++{
+		for j := 1; j < n-i ; j++{
+			fmt.Print(" ") 
 		}
-		for {
+		for k:=0; k<=i ;k++{
 			fmt.Print("* ")
-			k++
-			if k == 2*i-1 {
-				break
-			}
 		}
-		fmt.Println("")
+		fmt.Println()
 	}
 }
