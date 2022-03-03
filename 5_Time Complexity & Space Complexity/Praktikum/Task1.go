@@ -5,7 +5,7 @@ import (
 )
 
  func angkaprima(num int)bool{
-	for i := 2; i <= int(num)/2; i++ {
+	for i := 2; i <= num/2; i++ {
         if num%i == 0 {
             return false
         }

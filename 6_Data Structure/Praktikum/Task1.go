@@ -20,7 +20,7 @@ func ArrayMerge(arrayA, ArrayB []string) []string {
 
 
 func main() {
-  fmt.Println(ArrayMerge([]string{"king", "devil jin", "akuma"}, []string{"eddie", "steve", "geese"}))
+  fmt.Println(ArrayMerge([]string{"king", "devil jin", "akuma"}, []string{"king","eddie", "steve", "geese"}))
   // ["king", "devil jin", "akuma", "eddie", "steve", "geese"]
   fmt.Println(ArrayMerge([]string{"sergei", "jin"}, []string{"jin", "steve", "bryan"}))
   // ["sergei", "jin", "steve", "bryan"]

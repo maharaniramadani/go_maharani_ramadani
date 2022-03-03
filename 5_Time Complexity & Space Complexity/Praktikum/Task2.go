@@ -15,9 +15,9 @@ func Pangkat(base, pangkat int) int {
 }
 
 func main() {
-	fmt.Println(Pangkat(2, 3))
-	fmt.Println(Pangkat(5, 3))
-	fmt.Println(Pangkat(10, 2))
-	fmt.Println(Pangkat(2, 5))
-	fmt.Println(Pangkat(7, 3))
+	fmt.Println(Pangkat(2, 10))
+	// fmt.Println(Pangkat(5, 3))
+	// fmt.Println(Pangkat(10, 2))
+	// fmt.Println(Pangkat(2, 5))
+	// fmt.Println(Pangkat(7, 3))
 }
