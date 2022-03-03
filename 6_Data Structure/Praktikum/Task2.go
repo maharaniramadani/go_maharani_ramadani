@@ -5,12 +5,11 @@ import (
 )
 
 func munculsekali (num  []int) int {
-    for i:=0;i<len(num)-1;i=i+2{
-		if num[i]!=num[i+1]{
-			return num[i]
-		}
+    result := 0
+	for i := 0; i < len(num); i++ {
+		result ^= num[i]
 	}
-	return num[len(num)-1]
+	return result
 }
 
 func main(){
