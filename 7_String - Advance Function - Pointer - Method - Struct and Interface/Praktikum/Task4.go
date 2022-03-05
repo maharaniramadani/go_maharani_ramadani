@@ -5,12 +5,13 @@ import (
 )
 
 func minmax (num...*int) (min int,max int){
-	var k int 
-    for k=1;k < len(num); k++ {
-        if *(num[k]) > max {
-            max = *(num[k])
-		}else if *(num[k]) < min {
-            min = *(num[k])
+	min=*num[0]
+	max=*num[0]
+    for _,i := range num{
+        if *i > max {
+            max = *i
+		}else if *i < min {
+            min = *i
 		}
     }
 	return 
