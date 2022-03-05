@@ -4,16 +4,16 @@ import (
 	"fmt"
 )
 
-func minmax (num[]*int) (min int,max int){
+func minmax (num...*int) (min int,max int){
 	var k int 
-    for k=0;k < len(num); k++ {
-        if num[k] > *max {
-            *max = num[k];
-		}else if num[k] < *min {
-            *min=num[k];
-			}
+    for k=1;k < len(num); k++ {
+        if *(num[k]) > max {
+            max = *(num[k])
+		}else if *(num[k]) < min {
+            min = *(num[k])
+		}
     }
-	
+	return 
 }
 
 
