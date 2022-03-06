@@ -42,7 +42,7 @@ func (s Student) Max() (max int, name string){
 
 	var input int
 	for i,value := range s.score{
-		if mapp[" "] > value {
+		if mapp[" "] < value {
 			mapp[" "] = value
 			input = i
 		}
@@ -55,7 +55,7 @@ func (s Student) Max() (max int, name string){
 func main(){
 	var a = Student{}
 
-	for i := 0; i<6;i++{
+	for i := 0; i<3;i++{
 		var name string
 		fmt.Print("input "+ string(i)+ " student name : ")
 		fmt.Scan(&name)
@@ -65,4 +65,10 @@ func main(){
 		fmt.Scan(&score)
 		a.score=append(a.score, score)
 	}
+	fmt.Println("======================================")
+	fmt.Println("\nnilai rata-rata: ", a.Avarage())
+	scoremax,namemax :=a.Max()
+	fmt.Println("nama : " +namemax+ " dengan nilai: " ,scoremax)
+	scoremin,namemin :=a.Min()
+	fmt.Println("nama : " +namemin+ " dengan nilai: " ,scoremin)
 }
