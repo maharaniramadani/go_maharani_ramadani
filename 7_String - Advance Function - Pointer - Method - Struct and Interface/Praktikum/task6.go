@@ -20,13 +20,13 @@ func (s *student) Encode() string{
 	var nameEncode=""
 
 	encod:=func(offset rune) rune {
-		s := int(offset)+3
-		if s >'z'{
-			return rune(s-26)
-		}else if s <'a'{
-			return rune(s+26)
+		i := int(offset)+3
+		if i >'z'{
+			return rune(i-26)
+		}else if i <'a'{
+			return rune(i+26)
 		}
-		return rune(s)
+		return rune(i)
 	}
 	nameEncode = strings.Map(encod, s.name)
 	return nameEncode
@@ -36,13 +36,13 @@ func (s *student) Decode() string{
 	var nameDecode=""
 
 	dencod:=func(offset rune) rune {
-		s := int(offset)-3
-		if s >'z'{
-			return rune(s-26)
-		}else if s <'a'{
-			return rune(s+26)
+		i := int(offset)-3
+		if i >'z'{
+			return rune(i-26)
+		}else if i <'a'{
+			return rune(i+26)
 		}
-		return rune(s)
+		return rune(i)
 	}
 	nameDecode = strings.Map(dencod, s.nameEncode)
 	return nameDecode
