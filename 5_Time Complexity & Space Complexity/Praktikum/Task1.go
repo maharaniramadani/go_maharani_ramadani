@@ -2,15 +2,20 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
  func angkaprima(num int)bool{
-	for i := 2; i <= num/2; i++ {
-        if num%i == 0 {
-            return false
-        }
-    }
-    return num > 1
+	if num< 2 {
+		return false
+	}
+	sqrtnum := int(math.Sqrt(float64(num)))
+	for i := 2; i<=sqrtnum;i++{
+		if num%i==0 {
+			return false
+		}
+	}
+	return true
  }
 
  func main(){
