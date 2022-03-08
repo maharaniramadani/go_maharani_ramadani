@@ -3,7 +3,7 @@ import "fmt"
 
 func maxseq(arr []int)int{
 	result := 0
-	for i,_:= range arr{
+	for i:= range arr{
 		sum:=0
 		for _,value := range arr[i:]{
 			sum += value
