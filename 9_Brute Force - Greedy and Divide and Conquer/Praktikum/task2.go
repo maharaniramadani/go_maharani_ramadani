@@ -1,8 +1,19 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
 
 func moneycoin(money int)[]int{
-	
+	coin := []int{1,10,20,50,100,200,500,1000,2000,5000,10000}
+	var res []int
+	for i := len(coin)-1;i>=0;i--{
+		for coin[i] <= money{
+		res = append(res,coin[i])
+		money -= coin[i]
+		}
+	}
+	return res
 }
 
 func main(){
