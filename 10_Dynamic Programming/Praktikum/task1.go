@@ -16,6 +16,7 @@ func fibo(n int)int{
 	return memo[n]
 }
 
+//tabulation tercatat menggunakan loop biasa tidak hitung lagi 
 var memoTd map[int]int=map[int]int{}
 
 func fibotd(n int)int{
@@ -34,7 +35,7 @@ func fibotd(n int)int{
 }
 
 // var memoBU map[int]int=map[int]int{}
-
+//lebih lama komplicated array dulu untuk value ada kondisi
 func fiboBU(n int)int{
 	var memoBU map[int]int=map[int]int{}
 	for i := 0;i<=n;i++{
@@ -49,29 +50,25 @@ func fiboBU(n int)int{
 }
 
 func main(){
-	// fmt.Println(fibo(0)) 
-	// fmt.Println(fibo(1)) // 1
-	// fmt.Println(fibo(2)) // 1
-	// fmt.Println(fibo(3)) // 2
-	// fmt.Println(fibo(5)) // 5
-	// fmt.Println(fibo(6)) // 8
-	// fmt.Println(fibo(7)) // 13
-	// fmt.Println(fibo(9)) // 34
-	// fmt.Println(fibo(10)) // 55
-	// // fmt.Println(fiboCollect)
-	// fmt.Println(fibo(50)) // 55
+	fmt.Println(fibo(0)) 
+	fmt.Println(fibo(1)) // 1
+	fmt.Println(fibo(2)) // 1
+	fmt.Println(fibo(3)) // 2
+	fmt.Println(fibo(5)) // 5
+	fmt.Println(fibo(6)) // 8
+	fmt.Println(fibo(7)) // 13
+	fmt.Println(fibo(9)) // 34
+	fmt.Println(fibo(10)) // 55
 
-	// fmt.Println(fibotd(0)) 
-	// fmt.Println(fibotd(1)) // 1
-	// fmt.Println(fibotd(2)) // 1
-	// fmt.Println(fibotd(3)) // 2
-	// fmt.Println(fibotd(5)) // 5
-	// fmt.Println(fibotd(6)) // 8
-	// fmt.Println(fibotd(7)) // 13
-	// fmt.Println(fibotd(9)) // 34
-	// fmt.Println(fibotd(10)) // 55
-	// // fmt.Println(fiboCollect)
-	// fmt.Println(fibotd(50)) // 55
+	fmt.Println(fibotd(0)) 
+	fmt.Println(fibotd(1)) // 1
+	fmt.Println(fibotd(2)) // 1
+	fmt.Println(fibotd(3)) // 2
+	fmt.Println(fibotd(5)) // 5
+	fmt.Println(fibotd(6)) // 8
+	fmt.Println(fibotd(7)) // 13
+	fmt.Println(fibotd(9)) // 34
+	fmt.Println(fibotd(10)) // 55
 
 	fmt.Println(fiboBU(0)) 
 	fmt.Println(fiboBU(1)) // 1
@@ -82,6 +79,4 @@ func main(){
 	fmt.Println(fiboBU(7)) // 13
 	fmt.Println(fiboBU(9)) // 34
 	fmt.Println(fiboBU(10)) // 55
-	// fmt.Println(fiboCollect)
-	fmt.Println(fiboBU(50)) // 55
 }

@@ -44,5 +44,5 @@ func simpEq(a,b,c int) {
 
 func main() {
 	simpEq(1,2,3)
-	simpEq(6,6,14)   
+	simpEq(6,6,14)
 }
