@@ -10,7 +10,9 @@ Dalam materi ini, mempelajari:
 
 ## Proses
 kita sebagai programe harus membiasakan diri untuk bisa membuat code yang mudah dipahami untuk membantu pengembangan yang dilakukan oleh programer lain jika kita melakukan colaborasi. 
+
 kita harus menggunakan penamaan yang mudah dipahami, mudah dieja dan dicar, singkat namun mendeskripsikan konteks, konsisten dalam melakukan penamaan, hindari penamaan yang tidak perlu, diberikan komentar yang memang hanya di pelukan saja tidak usah setiap baris di berikan komentar, penulisan fungsi juga harus di perhatikan dan tidak mempunyai banyak parameter.
+
 Prinsip dari clean code yaitu KISS (keep it so simple), hindari membuat fungsi yang sekaligus memecahkan beberapa masalah buatlah code yang sederhana saja, DRY (don't repeat yourself) menghindari duplikaasi code.
 
 
