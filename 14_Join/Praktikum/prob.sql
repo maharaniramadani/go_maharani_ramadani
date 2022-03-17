@@ -1,8 +1,8 @@
--- menghapus database yang
+-- menghapus database yang lama
 MariaDB [(none)]> drop database alta_online_shop;
 Query OK, 1 row affected (0.002 sec)
 
--- membuat database
+-- membuat database baru
 MariaDB [(none)]> create database alta_online_shop;
 Query OK, 1 row affected (0.002 sec)
 
@@ -85,3 +85,21 @@ ALTER TABLE `transaction` ADD FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 ALTER TABLE `transaction` ADD FOREIGN KEY (`payment_method_id`) REFERENCES `payment_methods` (`id`);
 
+
+-- 1.a
+MariaDB [alta_online_shop]> insert into operators (id,name) values
+    -> (1, 'pengguna 1'),
+    -> (2, 'pengguna 2'),
+    -> (3, 'pengguna 3'),
+    -> (4, 'pengguna 4'),
+    -> (5, 'pengguna 5');
+Query OK, 5 rows affected (0.035 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+-- 1.b
+MariaDB [alta_online_shop]> insert into produk_type (id, name)
+    -> values (1, 'skincare'),
+    -> (2, 'lemari'),
+    -> (3, 'baju');
+Query OK, 3 rows affected (0.014 sec)
+Records: 3  Duplicates: 0  Warnings: 0
