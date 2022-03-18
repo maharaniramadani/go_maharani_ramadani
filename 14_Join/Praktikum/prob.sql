@@ -65,6 +65,7 @@ CREATE TABLE `payment_methods` (
 
 CREATE TABLE `users` (
   `id` int(11) PRIMARY KEY,
+  `name` varchar(25),
   `status` SMALLINT,
   `dob` date,
   `gender` char(1),
@@ -149,12 +150,12 @@ Query OK, 3 rows affected (0.009 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
 -- 1.h
-MariaDB [alta_online_shop]> insert into users (id, status, dob, gender) values
-    -> (1, 200, '2001-11-17', 'F'),
-    -> (2, 200, '2001-03-29', 'F'),
-    -> (3, 200, '2001-02-02', 'M'),
-    -> (4, 200, '2001-12-09', 'M'),
-    -> (5, 200, '2000-10-20', 'F');
+MariaDB [alta_online_shop]> insert into users (id, name, status, dob, gender) values
+    -> (1, 'rani', 200, '2001-11-17', 'F'),
+    -> (2, 'nia', 200, '2001-03-29', 'F'),
+    -> (3, 'ahmad', 200, '2001-02-02', 'M'),
+    -> (4, 'roy', 200, '2001-12-09', 'M'),
+    -> (5, 'andin', 200, '2000-10-20', 'F');
 Query OK, 5 rows affected (0.004 sec)
 Records: 5  Duplicates: 0  Warnings: 0
 
