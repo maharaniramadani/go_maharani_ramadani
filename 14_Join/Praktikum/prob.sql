@@ -103,3 +103,49 @@ MariaDB [alta_online_shop]> insert into produk_type (id, name)
     -> (3, 'baju');
 Query OK, 3 rows affected (0.014 sec)
 Records: 3  Duplicates: 0  Warnings: 0
+
+-- 1.c
+MariaDB [alta_online_shop]> insert into produk ( id, produk_type_id, operator_id, code, name, status) values
+    -> (1, 1, 3, 'SC1', 'Toner', '200'),
+    -> (2, 1, 3, 'SC2', 'Serum', '215');
+Query OK, 2 rows affected (0.004 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+-- 1.d
+MariaDB [alta_online_shop]> insert into produk ( id, produk_type_id, operator_id, code, name, status) values
+    -> (3, 2, 1, 'LP1', 'Lemari Pakaian Portable', '20'),
+    -> (4, 2, 1, 'LP2', 'Lemari Pakaian Plastik', '34'),
+    -> (5, 2, 1, 'LP3', 'Lemari Rak Buku', '95');
+Query OK, 3 rows affected (0.031 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+-- 1.e
+MariaDB [alta_online_shop]> insert into produk ( id, produk_type_id, operator_id, code, name, status) values
+    -> (3, 2, 1, 'LP1', 'Lemari Pakaian Portable', '20'),
+    -> (4, 2, 1, 'LP2', 'Lemari Pakaian Plastik', '34'),
+    -> (5, 2, 1, 'LP3', 'Lemari Rak Buku', '95');
+Query OK, 3 rows affected (0.031 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+-- 1.f
+MariaDB [alta_online_shop]> insert into produk_descriptions (id, produk_id, description) values
+    -> (1, 1, 'Toner merupakan produk perawatan kulit untuk menghapus sisa makeup,kotoran,minyak dan mencerahkan wajah'),
+    -> (2, 2, 'Serum merupakan produk perawatan kulit wajah untuk melembabkan, mencerahkan, hingga mengatasi kerutan'),
+    -> (3, 3, 'Lemari pakaian portable berbahan kain yang bisa dilipat'),
+    -> (4, 4, 'Lemari pakaian plastik berkualitas tinggi ukuran 2x3 tingkat'),
+    -> (5, 5, 'Lemari Buku, lemari portable serbaguna untuk merapikan buku, tempat majalah atau dokumen'),
+    -> (6, 6, 'Baju anak usia 1-5 tahun bahan katun'),
+    -> (7, 7, 'Dress cantik berkualitas premium'),
+    -> (8, 8, 'Kaos/Tshirt oblong berkualitas premium overzise');
+Query OK, 8 rows affected (0.030 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+-- 1.g
+MariaDB [alta_online_shop]> insert into payment_methods (id, name, status) values
+    -> (1, 'altapay', 200),
+    -> (2, 'E-Banking', 200),
+    -> (3, 'Transfer ATM', 200);
+Query OK, 3 rows affected (0.009 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+-- 1.h
