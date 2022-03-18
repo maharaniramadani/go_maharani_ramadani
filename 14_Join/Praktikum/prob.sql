@@ -295,3 +295,42 @@ MariaDB [alta_online_shop]> select * from produk limit 5;
 |  5 |              2 |           1 | LP3  | Lemari Rak Buku         |     95 | 2022-03-17 23:08:02 |
 +----+----------------+-------------+------+-------------------------+--------+---------------------+
 5 rows in set (0.001 sec)
+
+-- 3.a
+MariaDB [alta_online_shop]> update produk set name = 'product dummy' where id =1;
+Query OK, 1 row affected (0.011 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [alta_online_shop]> select * from produk;
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+| id | produk_type_id | operator_id | code | name                    | status | created_at          |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+|  1 |              1 |           3 | SC1  | product dummy           |    200 | 2022-03-18 02:37:14 |
+|  2 |              1 |           3 | SC2  | Serum                   |    215 | 2022-03-17 22:51:06 |
+|  3 |              2 |           1 | LP1  | Lemari Pakaian Portable |     20 | 2022-03-17 23:08:02 |
+|  4 |              2 |           1 | LP2  | Lemari Pakaian Plastik  |     34 | 2022-03-17 23:08:02 |
+|  5 |              2 |           1 | LP3  | Lemari Rak Buku         |     95 | 2022-03-17 23:08:02 |
+|  6 |              3 |           4 | BJ1  | Baju Anak               |   1000 | 2022-03-17 23:13:04 |
+|  7 |              3 |           4 | BJ2  | Dress                   |    140 | 2022-03-17 23:13:04 |
+|  8 |              3 |           4 | BJ3  | Kaos/T-shirt            |   1450 | 2022-03-17 23:13:04 |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+8 rows in set (0.000 sec)
+
+-- 3.b
+MariaDB [alta_online_shop]> update transaction_details set qyt = 3 where produk_id =3;
+Query OK, 6 rows affected (0.011 sec)
+Rows matched: 6  Changed: 6  Warnings: 0
+
+MariaDB [alta_online_shop]> select * from transaction_details where produk_id=3;
++----------------+-----------+---------+------+---------+---------------------+
+| transaction_id | produk_id | status  | qyt  | price   | created_at          |
++----------------+-----------+---------+------+---------+---------------------+
+|              1 |         3 | dikirim |    3 |  220000 | 2022-03-18 02:39:50 |
+|              4 |         3 | selesai |    3 |   80000 | 2022-03-18 02:39:50 |
+|              7 |         3 | dikirim |    3 |  900000 | 2022-03-18 02:39:50 |
+|              9 |         3 | selesai |    3 |  900000 | 2022-03-18 02:39:50 |
+|             12 |         3 | selesai |    3 |  350000 | 2022-03-18 02:39:50 |
+|             14 |         3 | dikirim |    3 | 2400000 | 2022-03-18 02:39:50 |
++----------------+-----------+---------+------+---------+---------------------+
+6 rows in set (0.001 sec)
+
