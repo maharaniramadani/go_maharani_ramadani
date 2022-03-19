@@ -334,3 +334,58 @@ MariaDB [alta_online_shop]> select * from transaction_details where produk_id=3;
 +----------------+-----------+---------+------+---------+---------------------+
 6 rows in set (0.001 sec)
 
+
+-- 4.a
+
+--  delete
+DELIMITER $$
+CREATE TRIGGER deleteProdes_produk
+BEFORE DELETE ON produk FOR EACH ROW
+BEGIN
+DELETE FROM produk_descriptions WHERE produk_id=OLD.id;
+END$$
+DELIMITER ;
+
+-- delete
+DELIMITER $$
+CREATE TRIGGER deleteTransdet_produk
+BEFORE DELETE ON produk FOR EACH ROW
+BEGIN
+DELETE FROM transaction_details WHERE produk_id=OLD.id;
+END$$
+DELIMITER ;
+
+ delete from produk where id=1;
+Query OK, 1 row affected (0.036 sec)
+
+MariaDB [alta_online_shop]> select * from produk;
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+| id | produk_type_id | operator_id | code | name                    | status | created_at          |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+|  2 |              1 |           3 | SC2  | Serum                   |    215 | 2022-03-17 22:51:06 |
+|  3 |              2 |           1 | LP1  | Lemari Pakaian Portable |     20 | 2022-03-17 23:08:02 |
+|  4 |              2 |           1 | LP2  | Lemari Pakaian Plastik  |     34 | 2022-03-17 23:08:02 |
+|  5 |              2 |           1 | LP3  | Lemari Rak Buku         |     95 | 2022-03-17 23:08:02 |
+|  6 |              3 |           4 | BJ1  | Baju Anak               |   1000 | 2022-03-17 23:13:04 |
+|  7 |              3 |           4 | BJ2  | Dress                   |    140 | 2022-03-17 23:13:04 |
+|  8 |              3 |           4 | BJ3  | Kaos/T-shirt            |   1450 | 2022-03-17 23:13:04 |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+7 rows in set (0.001 sec)
+
+-- 4.b
+
+MariaDB [alta_online_shop]> delete from produk where produk_type_id=1;
+Query OK, 1 row affected (0.019 sec)
+
+MariaDB [alta_online_shop]> select * from produk;
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+| id | produk_type_id | operator_id | code | name                    | status | created_at          |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+|  3 |              2 |           1 | LP1  | Lemari Pakaian Portable |     20 | 2022-03-17 23:08:02 |
+|  4 |              2 |           1 | LP2  | Lemari Pakaian Plastik  |     34 | 2022-03-17 23:08:02 |
+|  5 |              2 |           1 | LP3  | Lemari Rak Buku         |     95 | 2022-03-17 23:08:02 |
+|  6 |              3 |           4 | BJ1  | Baju Anak               |   1000 | 2022-03-17 23:13:04 |
+|  7 |              3 |           4 | BJ2  | Dress                   |    140 | 2022-03-17 23:13:04 |
+|  8 |              3 |           4 | BJ3  | Kaos/T-shirt            |   1450 | 2022-03-17 23:13:04 |
++----+----------------+-------------+------+-------------------------+--------+---------------------+
+6 rows in set (0.001 sec)
