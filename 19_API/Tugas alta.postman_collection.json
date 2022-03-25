@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "9dd6bb07-313c-48b8-8297-21c43abcc6f4",
+		"name": "Tugas alta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Target API 1",
+			"item": [
+				{
+					"name": "Request 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=tesla&from=2022-02-25&sortBy=publishedAt&apiKey=API_KEY",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "tesla"
+								},
+								{
+									"key": "from",
+									"value": "2022-02-25"
+								},
+								{
+									"key": "sortBy",
+									"value": "publishedAt"
+								},
+								{
+									"key": "apiKey",
+									"value": "API_KEY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=apple&from=2022-03-24&to=2022-03-24&sortBy=popularity&apiKey=API_KEY",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "apple"
+								},
+								{
+									"key": "from",
+									"value": "2022-03-24"
+								},
+								{
+									"key": "to",
+									"value": "2022-03-24"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "API_KEY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=API_KEY",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								},
+								{
+									"key": "category",
+									"value": "business"
+								},
+								{
+									"key": "apiKey",
+									"value": "API_KEY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "sources",
+									"value": "techcrunch"
+								},
+								{
+									"key": "apiKey",
+									"value": "API_KEY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=API_KEY",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "domains",
+									"value": "wsj.com"
+								},
+								{
+									"key": "apiKey",
+									"value": "API_KEY"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Target API 2",
+			"item": [
+				{
+					"name": "Request 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/films/1/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/vehicles/14/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"14",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/starships/22/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"starships",
+								"22",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Target API 3",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
