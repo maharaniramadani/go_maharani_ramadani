@@ -2,10 +2,10 @@ package controller
 
 import (
 	"net/http"
-	"problem2/config"
-	"problem2/model"
+	"praktikum/config"
+	"praktikum/model"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 )
 
 // ------------------controller
